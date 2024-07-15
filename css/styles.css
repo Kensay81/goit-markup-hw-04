@@ -96,10 +96,27 @@ ul,ol {
     letter-spacing: 0.02em;
     padding: 24px 0;
     display: flex;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover, .nav-link:focus {
     color: #404BBF;
+}
+
+.current {
+    position: relative;
+    color: #404BBF;
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #404BBF;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
 }
 
 .address {
@@ -117,6 +134,7 @@ ul,ol {
     line-height: 150%;
     letter-spacing: 0.02em;
     color: var(--slate);
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover, .address-link:focus {
@@ -126,6 +144,14 @@ ul,ol {
 .esol {
     background: var(--navy-blue);
     padding: 188px 0;
+}
+
+.esol-back-img {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/heroimage.jpg);
+    background-position: center;
+    max-width: 1440px;
+    background-size: cover;
 }
 
 .esol-head {
