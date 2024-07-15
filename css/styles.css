@@ -208,6 +208,22 @@ ul,ol {
     width: calc((100% - 72px) / 4);
 }
 
+.icon-card {
+    background-color: var(--cloud);
+    border: 1px solid var(--light-slate);
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    height: 112px;
+}
+
+.icon-card svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .about-subtitle {
     font-weight: 500;
     font-size: 20px;
