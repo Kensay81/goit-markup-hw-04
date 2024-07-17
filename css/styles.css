@@ -10,6 +10,7 @@
     --navy-blue-modal: rgba(46, 47, 66, 0.4);
     --grey: rgba(46, 47, 66, 0.7);
     --white: #fff;
+    --white-color: #FFFFFF;
     --dairy: #fcfcfc;
     --primary-brand-color: #4d5ae5;
     --pressed-state-color: #404bbf;
@@ -469,6 +470,7 @@ ul,ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--white-color);
+
 }
 
 .footer-media-list {
@@ -494,9 +496,9 @@ ul,ol {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-media-link:hover,
+.footer-media-link:hover
 .footer-media-link:focus {
-    background-color: var(--success-color);
+    background-color: #31d0aa;
 }
 
 .footer-img-icon {
